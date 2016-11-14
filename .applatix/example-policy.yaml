@@ -1,0 +1,68 @@
+---
+type: policy
+name: example-workflow-policy
+description: Policy to trigger workflow example
+template: example-workflow
+parameters:
+notifications:
+  -
+    when:
+      - on_start
+      - on_success
+      - on_failure
+      - on_change
+    whom:
+      - committer
+      - author
+      - hong@applatix.com
+  -
+    when:
+      - on_change
+    whom:
+      - abc@company.slack.com
+when:
+  -
+    event: on_push
+    target_branches:
+      - "master"
+      - "dev.+"
+  -
+    event: on_pull_request
+    target_branches:
+      - ".*"
+  -
+    event: on_pull_request_merge
+    target_branches:
+      - ".*"
+  -
+    event: on_cron
+    target_branches:
+      - ".*"
+    schedule: "*/2 * * * *"
+    timezone: "US/Pacific"
+labels:
+  milestone: test
+  version: 1.0.1
+
+---
+type: policy
+name: example-workflow-policy-1mins
+description: Policy to trigger golang-example every 1 minutes
+template: example-workflow
+parameters:
+notifications:
+  -
+    when:
+      - on_start
+      - on_success
+      - on_failure
+      - on_change
+    whom:
+      - hong@applatix.com
+when:
+  -
+    event: on_cron
+    target_branches:
+      - ".*"
+    schedule: "*/1 * * * *"
+    timezone: "US/Pacific"
