@@ -38,7 +38,7 @@ when:
     event: on_cron
     target_branches:
       - ".*"
-    schedule: "*/2 * * * *"
+    schedule: "*/15 * * * *"
     timezone: "US/Pacific"
 labels:
   milestone: test
@@ -65,4 +65,27 @@ when:
     target_branches:
       - ".*"
     schedule: "*/1 * * * *"
+    timezone: "US/Pacific"
+
+---
+type: policy
+name: example-workflow-policy-15mins
+description: Policy to trigger golang-example every 15 minutes
+template: example-workflow
+parameters:
+notifications:
+  -
+    when:
+      - on_start
+      - on_success
+      - on_failure
+      - on_change
+    whom:
+      - hong@applatix.com
+when:
+  -
+    event: on_cron
+    target_branches:
+      - ".*"
+    schedule: "*/15 * * * *"
     timezone: "US/Pacific"
