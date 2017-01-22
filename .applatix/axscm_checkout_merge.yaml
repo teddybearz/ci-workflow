@@ -2,15 +2,8 @@
 type: service_template
 subtype: container
 name: axscm-checkout-merge
-description: Checks out a source repository to /src and merge to target branch
-container:
-  resources:
-    mem_mib: 256
-    cpu_cores: 0.1
-    disk_gb: 10
-  image: get.applatix.io/applatix/axscm:v1
-  docker_options: ''
-  command: "axscm clone %%repo%% /src --branch %%target_branch%% --merge %%commit%%"
+description: Checks out commit to /src and merge it to target branch
+
 inputs:
   parameters:
     commit:
@@ -21,7 +14,15 @@ inputs:
       default: "%%session.target_branch%%"
     author:
       default: "%%session.author%%"
+
 outputs:
   artifacts:
     code:
-      path: "/src"
+      path: /src
+
+container:
+  image: get.applatix.io/applatix/axscm:v1
+  resources:
+    mem_mib: 256
+    cpu_cores: 0.1
+  command: axscm clone %%repo%% /src --branch %%target_branch%% --merge %%commit%%

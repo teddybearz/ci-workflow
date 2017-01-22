@@ -2,21 +2,26 @@
 type: service_template
 subtype: workflow
 name: example-workflow
-description: workflow example
+description: Example workflow
+
 inputs:
   parameters:
     commit:
       default: "%%session.commit%%"
     repo:
       default: "%%session.repo%%"
+
 steps:
-- checkout:
+-
+  checkout:
     template: axscm-checkout
-- build:
+-
+  build:
     template: example-build
     parameters:
       code: "%%steps.checkout.code%%"
-- test1:
+-
+  test1:
     template: example-test
     parameters:
       code: "%%steps.checkout.code%%"
@@ -41,7 +46,8 @@ steps:
     parameters:
       code: "%%steps.checkout.code%%"
       binary: "%%steps.build.binary%%"
-- release:
+-
+  release:
     template: example-release
     parameters:
       code: "%%steps.checkout.code%%"

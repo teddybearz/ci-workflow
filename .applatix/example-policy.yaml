@@ -1,9 +1,9 @@
 ---
 type: policy
 name: example-workflow-policy
-description: Policy to trigger workflow example
+description: Trigger example-workflow on pushes, pull requests and as a cron job
+
 template: example-workflow
-parameters:
 notifications:
   -
     when:
@@ -47,7 +47,8 @@ labels:
 ---
 type: policy
 name: example-workflow-policy-1mins
-description: Policy to trigger golang-example every 1 minutes
+description: Trigger example-workflow every 1 minutes
+
 template: example-workflow
 parameters:
 notifications:
@@ -70,7 +71,8 @@ when:
 ---
 type: policy
 name: example-workflow-policy-15mins
-description: Policy to trigger golang-example every 15 minutes
+description: Trigger example-workflow every 15 minute
+
 template: example-workflow
 parameters:
 notifications:
