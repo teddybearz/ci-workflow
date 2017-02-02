@@ -3,7 +3,7 @@ type: policy
 name: example-workflow-policy
 description: Trigger example-workflow on pushes, pull requests and as a cron job
 
-template: example-workflow
+template: example-workflow-approval
 notifications:
   -
     when:
@@ -49,7 +49,7 @@ type: policy
 name: example-workflow-policy-1mins
 description: Trigger example-workflow every 1 minutes
 
-template: example-workflow
+template: example-workflow-approval
 parameters:
 notifications:
   -
@@ -73,7 +73,7 @@ type: policy
 name: example-workflow-policy-15mins
 description: Trigger example-workflow every 15 minute
 
-template: example-workflow
+template: example-workflow-approval
 parameters:
 notifications:
   -
