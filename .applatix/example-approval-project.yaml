@@ -13,7 +13,7 @@ actions:
     name: test
     template: example-workflow-test
 
-categories: ["test"]
+categories: ["test", "promoted"]
 publish:
   branches:
     - master
