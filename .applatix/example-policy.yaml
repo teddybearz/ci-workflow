@@ -52,19 +52,12 @@ labels:
 type: policy
 name: example-workflow-policy-1mins
 description: Trigger example-workflow every 1 minutes
-template: example-workflow-approval
+template: example-workflow
 parameters:
-  required_approvals: "hong@applatix.com"
-  optional_approvals: "pratik@applatix.com"
-  number_of_optional_approvals_needed: "0"
-  timeout_in_minutes: "30"
 notifications:
   -
     when:
-      - on_start
-      - on_success
       - on_failure
-      - on_change
     whom:
       - hong@applatix.com
 when:
