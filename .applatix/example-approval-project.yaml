@@ -1,6 +1,6 @@
 ---
 type: project
-name: example-approval-project
+name: ex-approval
 description: Run an example workflow with approval step
 actions:
   -
@@ -13,3 +13,4 @@ publish:
 labels:
     tags: "[\"test\"]"
 assets:
+    icon: "https://raw.githubusercontent.com/Applatix/example-approval/master/.applatix/approval.png"
