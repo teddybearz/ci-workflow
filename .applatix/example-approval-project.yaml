@@ -1,6 +1,6 @@
 ---
 type: project
-name: example-approval
+name: example-approval-project
 description: Run an example workflow with approval step
 actions:
   -
@@ -13,4 +13,3 @@ publish:
 labels:
     tags: "[\"test\"]"
 assets:
-   

@@ -4,6 +4,15 @@ name: example-workflow-policy
 description: Trigger example-workflow on pushes, pull requests and as a cron job
 
 template: example-workflow-approval
+parameters:
+  required_approvals:
+    default: hong@applatix.com
+  optional_approvals:
+    default: pratik@applatix.com
+  number_of_optional_approvals_needed:
+    default: 0
+  timeout_in_minutes:
+    default: 30
 notifications:
   -
     when:
@@ -51,6 +60,14 @@ description: Trigger example-workflow every 1 minutes
 
 template: example-workflow-approval
 parameters:
+  required_approvals:
+    default: hong@applatix.com
+  optional_approvals:
+    default: pratik@applatix.com
+  number_of_optional_approvals_needed:
+    default: 0
+  timeout_in_minutes:
+    default: 30
 notifications:
   -
     when:
@@ -75,6 +92,14 @@ description: Trigger example-workflow every 15 minute
 
 template: example-workflow-approval
 parameters:
+  required_approvals:
+    default: hong@applatix.com
+  optional_approvals:
+    default: pratik@applatix.com
+  number_of_optional_approvals_needed:
+    default: 0
+  timeout_in_minutes:
+    default: 30
 notifications:
   -
     when:
@@ -97,6 +122,15 @@ name: example-workflow-policy-onpush
 description: Trigger example-workflow on pushes
 
 template: example-workflow-approval
+parameters:
+  required_approvals:
+    default: hong@applatix.com
+  optional_approvals:
+    default: pratik@applatix.com
+  number_of_optional_approvals_needed:
+    default: 0
+  timeout_in_minutes:
+    default: 30
 notifications:
   -
     when:
