@@ -1,0 +1,48 @@
+---
+type: service_template
+subtype: workflow
+name: example-test-workflow
+description: Example test workflow
+
+inputs:
+  parameters:
+    commit:
+      default: "%%session.commit%%"
+    repo:
+      default: "%%session.repo%%"
+
+steps:
+-
+  checkout:
+    template: axscm-checkout
+-
+  build:
+    template: example-build
+    parameters:
+      code: "%%steps.checkout.code%%"
+-
+  test1:
+    template: example-test
+    parameters:
+      code: "%%steps.checkout.code%%"
+      binary: "%%steps.build.binary%%"
+  test2:
+    template: example-test
+    parameters:
+      code: "%%steps.checkout.code%%"
+      binary: "%%steps.build.binary%%"
+  test3:
+    template: example-test
+    parameters:
+      code: "%%steps.checkout.code%%"
+      binary: "%%steps.build.binary%%"
+  test4:
+    template: example-test
+    parameters:
+      code: "%%steps.checkout.code%%"
+      binary: "%%steps.build.binary%%"
+  test5:
+    template: example-test
+    parameters:
+      code: "%%steps.checkout.code%%"
+      binary: "%%steps.build.binary%%"

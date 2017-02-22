@@ -6,6 +6,13 @@ actions:
   -
     name: run
     template: example-workflow-approval
+  -
+    name: build
+    template: example-workflow-build
+  -
+    name: test
+    template: example-workflow-test
+
 categories: ["test"]
 publish:
   branches:
