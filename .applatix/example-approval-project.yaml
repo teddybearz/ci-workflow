@@ -6,7 +6,7 @@ actions:
   -
     name: run
     template: example-workflow-approval
-categories: ["test", "promoted"]
+categories: ["test"]
 publish:
   branches:
     - master
