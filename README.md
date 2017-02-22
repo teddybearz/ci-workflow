@@ -1,6 +1,4 @@
-# Example Approval
-
-## example-workflow-approval
+### Example Approval
 
 * checkout code
 * build code
