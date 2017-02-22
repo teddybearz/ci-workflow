@@ -1,4 +1,4 @@
-# Applatix Approval Example
+# Example Approval
 
 ## example-workflow-approval
 
