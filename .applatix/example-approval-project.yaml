@@ -1,10 +1,16 @@
 ---
 type: project
-name: example approval
-description: Run an example workflow with approval step
+name: Example Approval3
+description: Run an example workflow with approval step.
 actions:
   -
     name: run
+    template: example-workflow-approval
+  -
+    name: build
+    template: example-workflow-approval
+  -
+    name: test
     template: example-workflow-approval
 
 categories: ["test", "promoted"]

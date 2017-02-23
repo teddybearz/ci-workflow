@@ -57,4 +57,4 @@ then
     exit 1
 fi
 
-docker run -v "$SRC_DIR":"$SRC_DIR" applatix/axchecker:2.0.1-1d387e3 /axchecker/axchecker_linux ${debug_option} ${SRC_DIR}
+docker run -v "$SRC_DIR":"$SRC_DIR" applatix/axchecker:2.0.1-3c71e12 /axchecker/axchecker_linux ${debug_option} ${SRC_DIR}
