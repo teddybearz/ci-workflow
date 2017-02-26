@@ -20,5 +20,5 @@ publish:
 labels:
     tags: "[\"test\"]"
 assets:
-    icon:     "https://raw.githubusercontent.com/Applatix/example-approval/master/approval.png"
-    detail:   "https://raw.githubusercontent.com/Applatix/example-approval/master/README.md"
+    icon:     "/approval.png"
+    detail:   "/README.md"
