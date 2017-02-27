@@ -1,6 +1,6 @@
 ---
 type: project
-name: example qpproval
+name: example approval
 description: Run an example workflow with approval step.
 actions:
   -
