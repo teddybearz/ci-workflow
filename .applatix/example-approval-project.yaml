@@ -8,10 +8,10 @@ actions:
     template: example-workflow-approval
   -
     name: build
-    template: example-workflow-approval
+    template: example-build
   -
     name: test
-    template: example-workflow-approval
+    template: example-test
 
 categories: ["test", "promoted"]
 publish:
