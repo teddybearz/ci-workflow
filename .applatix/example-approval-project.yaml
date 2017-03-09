@@ -1,6 +1,6 @@
 ---
 type: project
-name: example approval
+name: Example Approval
 description: Run an example workflow with approval step.
 actions:
   -
@@ -13,12 +13,12 @@ actions:
     name: test
     template: example-test
 
-categories: ["test", "promoted"]
+categories: ["demo", "promoted"]
 publish:
   branches:
     - master
 labels:
-    tags: "[\"test\"]"
+    tags: "[\"demo\"]"
 assets:
     icon:     "/approval.png"
     detail:   "/README.md"
