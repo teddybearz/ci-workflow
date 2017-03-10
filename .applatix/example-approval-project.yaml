@@ -19,6 +19,8 @@ publish:
     - master
 labels:
     tags: "[\"demo\"]"
+    publisher: Applatix
 assets:
     icon:     "/approval.png"
+    publisher_icon: "/AX_Pub.png"
     detail:   "/README.md"
