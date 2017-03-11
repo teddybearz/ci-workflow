@@ -1,7 +1,6 @@
-* checkout code
-* build code
-* run tests in parallel
-* wait for approval
-* release 
-*demo policy
-
+* This workflow executes five steps.
+* Checkout code given a repo and commit
+* Build the checked out code
+* Run five tests in parallel 
+* Send notification for approval and wait for the specified timeout
+* Once approved, release artificats 
