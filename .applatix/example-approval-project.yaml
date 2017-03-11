@@ -1,6 +1,6 @@
 ---
 type: project
-name: Example Approval
+name: Approval Workflow
 description: Run an example workflow with approval step.
 actions:
   -
