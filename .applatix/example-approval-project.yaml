@@ -1,7 +1,7 @@
 ---
 type: project
-name: Sample CI Workflow with Approval
-description: Run an sample workflow with approval step.
+name: Sample CI Workflow 
+description: Run an sample CI workflow with approval step.
 actions:
   -
     name: run
