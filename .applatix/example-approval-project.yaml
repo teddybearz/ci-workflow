@@ -13,7 +13,7 @@ actions:
     name: test
     template: example-test
 
-categories: ["demo", "promoted"]
+categories: ["devops", "promoted"]
 publish:
   branches:
     - master
