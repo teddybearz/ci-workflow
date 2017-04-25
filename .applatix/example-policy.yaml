@@ -18,12 +18,6 @@ notifications:
     whom:
       - committer
       - author
-      - hong@applatix.com
-  -
-    when:
-      - on_change
-    whom:
-      - abc@company.slack.com
 when:
   -
     event: on_push
