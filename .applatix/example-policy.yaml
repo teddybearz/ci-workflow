@@ -4,8 +4,8 @@ name: example-workflow-policy
 description: Trigger example-workflow on pushes, pull requests and as a cron job
 template: example-workflow-approval
 parameters:
-  required_approvals: hong@applatix.com
-  optional_approvals: pratik@applatix.com
+  required_approvals: 
+  optional_approvals:
   number_of_optional_approvals_needed: 0
   timeout_in_minutes: 10
 notifications:
