@@ -11,7 +11,7 @@ inputs:
     repo:
       default: "%%session.repo%%"
     required_approvals:
-      default: hong@applatix.com
+      default: pratik@applatix.com
     optional_approvals:
       default: " "
     number_of_optional_approvals_needed:
