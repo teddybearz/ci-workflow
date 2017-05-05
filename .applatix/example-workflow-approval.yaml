@@ -1,6 +1,5 @@
 ---
-type: service_template
-subtype: workflow
+type: workflow
 name: example-workflow-approval
 description: Example workflow with approval
 

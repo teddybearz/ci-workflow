@@ -1,6 +1,5 @@
 ---
-type: service_template
-subtype: container
+type: container
 name: example-build
 description: Build the code
 

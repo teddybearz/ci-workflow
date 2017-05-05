@@ -1,6 +1,5 @@
 ---
-type: service_template
-subtype: container
+type: container
 name: example-release
 description: release example (just sleeps for now)
 
