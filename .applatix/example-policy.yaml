@@ -44,43 +44,14 @@ labels:
 
 ---
 type: policy
-name: example-workflow-policy-1mins
-description: Trigger example-workflow every 1 minutes
-template: example-workflow
-parameters:
-notifications:
-  -
-    when:
-      - on_failure
-    whom:
-      - hong@applatix.com
-when:
-  -
-    event: on_cron
-    target_branches:
-      - ".*"
-    schedule: "*/1 * * * *"
-    timezone: "US/Pacific"
-
----
-type: policy
 name: example-workflow-policy-15mins
 description: Trigger example-workflow every 15 minute
 template: example-workflow-approval
 parameters:
-  required_approvals: hong@applatix.com
-  optional_approvals: pratik@applatix.com
+  required_approvals: " "
+  optional_approvals: " "
   number_of_optional_approvals_needed: 0
   timeout_in_minutes: 10
-notifications:
-  -
-    when:
-      - on_start
-      - on_success
-      - on_failure
-      - on_change
-    whom:
-      - hong@applatix.com
 when:
   -
     event: on_cron
@@ -88,14 +59,15 @@ when:
       - ".*"
     schedule: "*/15 * * * *"
     timezone: "US/Pacific"
+
 ---
 type: policy
 name: example-workflow-policy-onpush
 description: Trigger example-workflow on pushes
 template: example-workflow-approval
 parameters:
-  required_approvals: hong@applatix.com
-  optional_approvals: pratik@applatix.com
+  required_approvals: " "
+  optional_approvals: " "
   number_of_optional_approvals_needed: 0
   timeout_in_minutes: 10
 notifications:
@@ -104,16 +76,13 @@ notifications:
       - on_start
       - on_success
       - on_failure
-      - on_change
     whom:
       - committer
-      - author
-      - hong@applatix.com
   -
     when:
       - on_change
     whom:
-      - abc@company.slack.com
+      - author
 when:
   -
     event: on_push
