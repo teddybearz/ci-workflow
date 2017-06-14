@@ -42,16 +42,6 @@ steps:
     parameters:
       code: "%%steps.checkout.code%%"
       binary: "%%steps.build.binary%%"
-  test4:
-    template: example-test
-    parameters:
-      code: "%%steps.checkout.code%%"
-      binary: "%%steps.build.binary%%"
-  test5:
-    template: example-test
-    parameters:
-      code: "%%steps.checkout.code%%"
-      binary: "%%steps.build.binary%%"
 -
   approval:
     template: axapproval
