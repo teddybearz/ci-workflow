@@ -7,11 +7,6 @@ actions:
     run:
         template: example-workflow-approval
   
-    build:
-        template: example-build
-
-    test:
-        template: example-test
 
 categories: ["devops", "promoted"]
 publish:
