@@ -1,7 +1,7 @@
 ---
 type: container
 version: 1
-name: example-test
+name: example-test2
 description: Run test
 
 inputs:
