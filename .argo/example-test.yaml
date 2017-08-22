@@ -9,7 +9,7 @@ inputs:
     CODE:
         path: /src
     BINARY:
-        path: /src/main
+        path: /src22/main
 
 resources:
     mem_mib: 256
