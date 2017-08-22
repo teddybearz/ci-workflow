@@ -7,9 +7,9 @@ description: Run test
 inputs:
   artifacts:
     CODE:
-        path: /src
-    BINARY:
         path: /src/main
+    BINARY:
+        path: /src
 
 resources:
     mem_mib: 256
